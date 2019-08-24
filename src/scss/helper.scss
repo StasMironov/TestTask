@@ -1,0 +1,29 @@
+@import "font.scss";
+@import "color.scss";
+.mf {
+  max-width: 1260px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  border: 10px solid #fff;
+  padding: 30px 30px 60px;
+  z-index: 1;
+  box-sizing: border-box;
+
+  @media screen and  (max-width: 600px) {
+    padding: 20px 15px 20px;
+    border-left: none;
+    border-right: none;
+  }
+}
+
+.bg {
+  position: absolute;
+  width: calc(100% - 0px);
+  height: 100%;
+  top: 0;
+  z-index: -1;
+  left: 0;
+  background-color: $dark-blue;
+  opacity: 0.6;
+}

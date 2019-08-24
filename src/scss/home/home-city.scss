@@ -1,0 +1,38 @@
+@import "../color.scss";
+@import "../font.scss";
+
+.home-city {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+
+  @media screen and  (max-width: 600px) {
+    flex-direction: column;
+  }
+
+  &__item {
+    margin-bottom: 15px;
+
+    &:not(:last-child) {
+      margin-right: 60px;
+    }
+  }
+
+  &__name {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  &__address, &__phone {
+    font-family: "Roboto-Regular";
+    font-size: 14px;
+  }
+
+  &__address {
+    margin-bottom: 10px;
+  }
+
+  &__phone {
+    color: $orange;
+  }
+}

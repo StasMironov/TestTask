@@ -1,0 +1,65 @@
+@import "color.scss";
+@import "font.scss";
+
+.modal {
+  display: none;
+  position: fixed;
+  max-width: 765px;
+  border: 10px solid $dark-blue;
+  padding: 25px 70px 25px 25px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  background-color: white;
+  margin: 20% auto;
+  top: 0;
+  height: auto;
+  overflow: scroll;
+  min-height: 400px;
+
+  @media screen and  (max-width: 768px) {
+    padding: 25px;
+  }
+
+  &__close {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    top: 25px;
+    right: 25px;
+    cursor: pointer;
+    z-index: 1050;
+
+    &:after, &:before {
+      position: absolute;
+      left: 0px;
+      content: ' ';
+      height: 14px;
+      width: 2px;
+      background-color: $dark-blue;
+    }
+
+    &:before {
+      transform: rotate(45deg);
+    }
+
+    &:after {
+      transform: rotate(-45deg);
+    }
+  }
+
+  &__title {
+    font-size: 36px;
+    line-height: 48px;
+    margin-bottom: 30px;
+
+    @media screen and  (max-width: 600px) {
+      font-size: 28px;
+    }
+
+    a {
+      color: $dark-blue;
+    }
+  }
+}

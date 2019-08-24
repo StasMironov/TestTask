@@ -1,0 +1,11 @@
+@import "../color.scss";
+@import "../font.scss";
+
+.home-branch {
+  display: flex;
+  flex-direction: column;
+  max-width: 1260px;
+  background-color: $dark-blue;
+  opacity: 0.6;
+  padding: 30px 30px 105px 30px;
+}

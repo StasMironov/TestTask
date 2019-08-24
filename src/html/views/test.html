@@ -1,0 +1,92 @@
+<%
+var data = {
+title: "Заголовок | Проект",
+author: "Mironov.S"
+};
+%>
+<%= _.template(require('./../includes/header.html'))(data) %>
+
+<div class="container">
+
+  <div class="home">
+
+    <div class="banner">
+      <div class="banner__grid">
+
+        <div class="banner__left">
+          <div class="banner__text banner__text--small">
+            Latest News
+          </div>
+          <div class="banner__text banner__text--big">
+            BodyBuilding best
+            for you health
+          </div>
+        </div>
+
+        <div class="banner__right">
+          <div class="banner__text banner__text--vertical">
+            Featured Article
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="home-menu">
+      <div class="home-menu__item">
+        Signup to
+        Newsletter
+      </div>
+
+      <div class="home-menu__item">
+        Your Name
+      </div>
+
+      <div class="home-menu__item">
+        Your Email Address
+      </div>
+
+      <div class="home-menu__item">
+        <a href="javascript:void();">Subscribe Now</a>
+      </div>
+    </div>
+
+    <div class="home-article">
+      <div class="home-article__item">
+        <div class="home-article__icon">
+          <img src="./favicon/pencil.svg" />
+        </div>
+
+        <div class="home-article__category">
+          Travelling
+        </div>
+
+        <div class="home-article__title">
+          Travel besT Adventure
+        </div>
+
+        <div class="home-article__date">
+          January 25, 2016
+        </div>
+
+        <div class="home-article__description">
+          Lorem ipsum doloirs sit amet, csatetur adipisicin, sed does eiusmod tehampor incididunt uts laboasre et dolhvaliqua. Ut enim  vem, nostrasuaations ullamco labiosi ut saaliquip exoi asea comoodo Disco choice is the have great work.
+        </div>
+
+      </div>
+      <div class="home-article__item">
+
+      </div>
+      <div class="home-article__item">
+
+      </div>
+      <div class="home-article__item">
+
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>

@@ -1,0 +1,116 @@
+@import "color.scss";
+@import "font.scss";
+.banner {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  background-color: white;
+
+  @media screen and  (max-width: 600px) {
+    padding: 0px 15px;
+  }
+
+  &__img {
+    img {
+      height: 100%;
+      width: 100%;
+    }
+
+    @media screen and  (max-width: 1600px) {
+      width: 690px;
+    }
+    @media screen and  (max-width: 1400px) {
+      width: 600px;
+    }
+    @media screen and  (max-width: 1300px) {
+      width: 525px;
+    }
+    @media screen and  (max-width: 1200px) {
+      width: 490px;
+    }
+    @media screen and  (max-width: 1024px) {
+      width: 400px;
+    }
+    @media screen and  (max-width: 880px) {
+      width: 320px;
+    }
+    @media screen and  (max-width: 768px) {
+      width: 320px;
+    }
+  }
+
+  &__grid {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    flex-wrap: wrap;
+
+    @media screen and  (max-width: 1300px) {
+      padding-bottom: 20px;
+    }
+
+    @media screen and  (max-width: 600px) {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+  
+  &__info {
+    margin-left: auto;
+    width: 600px;
+
+    @media screen and  (max-width: 1200px) {
+      width: 450px;
+    }
+
+    @media screen and  (max-width: 880px) {
+      width: 405px;
+    }
+
+    @media screen and  (max-width: 768px) {
+      max-width: 240px;
+      width: 450px;
+    }
+
+    @media screen and  (max-width: 600px) {
+      margin-left: 0px;
+      width: 100%;
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__title {
+    font-family: "Oswald-Regular";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    margin-bottom: 30px;
+
+    @media screen and  (max-width: 1024px) {
+      font-size: 36px;
+    }
+    @media screen and  (max-width: 600px) {
+      font-size: 28px;
+    }
+
+    span {
+      color: $blue
+    }
+  }
+
+  &__text {
+    font-family: "Roboto-Regular";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 25px;
+
+    @media screen and  (max-width: 600px) {
+      font-size: 12px;
+      margin-bottom: 20px;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+
+.home-partner {
+  overflow-x: auto;
+  margin-bottom: 60px;
+
+  @media screen and  (max-width: 600px) {
+    padding: 0px 15px;
+  }
+
+  &__item {
+    display: flex;
+    min-width: 100px;
+    &:not(:last-child){
+      margin-right: 40px;
+    }
+  }
+
+  &__grid {
+    overflow-x: auto;
+    display: flex;
+    align-items: center;
+  }
+
+  &__title {
+    font-family: "Oswald-Regular";
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+}

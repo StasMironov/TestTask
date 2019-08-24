@@ -1,0 +1,58 @@
+@import "color.scss";
+@import "font.scss";
+
+.btn {
+  display: inline-block;
+  font-size: 12px;
+  color: $black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Oswald-Regular";
+  transition: .3s;
+  cursor: pointer;
+
+  &--link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    padding: 15px 0px;
+    font-size: 12px;
+    background-color: $orange;
+    box-shadow: 1px 7px 15px -2px $black;
+
+    &:hover {
+      background-color: #ff9800;
+      color: white;
+    }
+  }
+
+  &--model {
+    position: relative;
+    padding-bottom: 5px;
+    margin-left: auto;
+
+    &:after {
+      position: absolute;
+      display: block;
+      content: "";
+      height: 2px;
+      width: 100%;
+      bottom: 0;
+      background-color: $orange;
+      transition: width .3s ease-in-out;
+    }
+
+    &:hover:after, &:focus:after {
+      width: 0%;
+    }
+  }
+}
+
+.active_btn {
+  color: $light-blue;
+
+  &:after {
+    background-color: $light-blue;
+  }
+}

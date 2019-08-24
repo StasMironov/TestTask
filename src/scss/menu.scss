@@ -1,0 +1,123 @@
+@import "color.scss";
+@import "font.scss";
+
+.menu {
+  background-color: white;
+
+  &__icon {
+    flex-shrink: 0;
+
+    @media screen and  (max-width: 600px) {
+      flex-shrink: 1;
+      margin-right: 20px;
+      width: 95px;
+    }
+  }
+
+  &__grid {
+    display: flex;
+    padding: 20px 0px;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1260px;
+    box-sizing: border-box;
+
+  @media screen and  (max-width: 600px) {
+    padding: 20px 15px;
+  }
+  }
+
+  &__func {
+    display: none;
+    flex-shrink: 0;
+
+    @media screen and  (max-width: 768px) {
+      display: block;
+      cursor: pointer;
+    }
+  }
+
+  &__nav {
+    font-family: "Oswald-Light";
+    margin-left: auto;
+
+
+    @media screen and  (max-width: 768px) {
+      display: flex;
+      position: absolute;
+      background-color: $light-green;
+      width: 100%;
+      right: 0;
+      padding: 10px 0;
+      flex-direction: column;
+      bottom: 0px;
+      transform: translateY(0px);
+      transition: transform .2s ease-in-out;
+      z-index: -1;
+    }
+  }
+
+  &__contact {
+    margin-left: auto;
+    margin-right: 30px;
+
+    a {
+      display: block;
+
+      &:first-child {
+        font-size: 14px;
+        color: $black;
+        margin-bottom: 5px;
+
+        @media screen and  (max-width: 600px) {
+          display: none;
+        }
+      }
+
+      &:last-child {
+        font-size: 18px;
+        color: $dark-blue;
+
+        @media screen and  (max-width: 600px) {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  &__link {
+    font-size: 16px;
+    color: $black;
+
+    &:not(:last-child){
+      margin-right: 30px;
+    }
+  }
+
+  .link {
+    display: inline-flex;
+    position: relative;
+    padding-bottom: 5px;
+    margin-left: auto;
+
+    @media screen and  (max-width: 768px) {
+      margin: 0 auto;
+      margin-bottom: 5px !important;
+    }
+
+    &:after {
+      position: absolute;
+      display: block;
+      content: "";
+      height: 2px;
+      width: 0%;
+      bottom: 0;
+      background-color: $orange;
+      transition: width .3s ease-in-out;
+    }
+
+    &:hover:after, &:focus:after {
+      width: 100%;
+    }
+  }
+}

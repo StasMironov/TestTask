@@ -1,0 +1,28 @@
+@import "../color.scss";
+@import "../font.scss";
+
+.home {
+  &__feature {
+    font-family: "Roboto-Regular";
+    font-size: 14px;
+    line-height: 28px;
+    padding: 20px 110px 20px 150px;
+    border: 10px solid #ffc001;
+    margin-bottom: 60px;
+
+    @media screen and  (max-width: 768px) {
+      padding: 20px;
+    }
+
+    @media screen and  (max-width: 600px) {
+      padding: 20px 10px 20px 10px !important;
+    }
+
+    @media screen and  (max-width: 600px) {
+      border-left: none;
+      border-right: none;
+      padding: 20px 55px;
+      margin-bottom: 35px;
+    }
+  }
+}

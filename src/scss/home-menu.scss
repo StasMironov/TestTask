@@ -1,0 +1,86 @@
+@import "color.scss";
+.home-menu {
+  display: flex;
+  align-items: center;
+  margin-bottom: 100px;
+  overflow-x: auto;
+  
+
+  &__item {
+    &:nth-child(1) {
+      font-family: "Montserrat-Regular";
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 20px;
+      max-width: 175px;
+      letter-spacing: 4px;
+      line-height: 28px;
+      margin-right: 55px;
+    }
+
+    &:nth-child(2) {
+      color: $light-gray;
+      font-size: 15px;
+      font-weight: 300;
+      line-height: 28px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-right: 385px;
+    }
+
+    &:nth-child(3) {
+      color: $light-gray;
+      font-size: 15px;
+      font-weight: 300;
+      line-height: 28px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-right: 290px;
+    }
+
+    &:nth-child(4) {
+      width: 282px;
+      height: 50px;
+      box-shadow: 0 0 0 rgba(232, 232, 232, 0.11);
+      border: 1px solid rgba(221, 221, 221, 0.15);
+      background-color: $black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      a {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $white;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 24px;
+        text-transform: uppercase;
+        letter-spacing: 2.8px;
+        text-decoration: none;
+      }
+    }
+
+    &--btn {
+      margin-left: auto;
+      transition: .6s;
+
+      &:hover {
+        background-color: $light-brown;
+        a {
+          color: $black;
+        }
+      }
+
+      &:active {
+        background-color: $btn-active;
+        a {
+          color: $white;
+        }
+      }
+    }
+  }
+}
