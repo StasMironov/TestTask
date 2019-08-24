@@ -54,6 +54,12 @@
     font-family: "Roboto-Regular";
     margin-right: 60px;
 
+    a {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
 
     @media screen and  (max-width: 600px) {
       margin-right: 0px;
