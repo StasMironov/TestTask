@@ -30,6 +30,7 @@
     right: 25px;
     cursor: pointer;
     z-index: 1050;
+    transition: .3s;
 
     &:after, &:before {
       position: absolute;
@@ -38,6 +39,10 @@
       height: 14px;
       width: 2px;
       background-color: $dark-blue;
+    }
+
+    &:hover:after, &:hover:before {
+      background-color: red;
     }
 
     &:before {
