@@ -7,7 +7,7 @@
   margin-bottom: 100px;
   margin-left: -20px;
 
-  @media screen and  (max-width: 600px) {
+  @media (max-width: 600px) {
     flex-direction: column;
     margin-left: 0;
   }
@@ -17,7 +17,7 @@
     margin-right: 60px;
     flex-wrap: wrap;
 
-    @media screen and  (max-width: 768px) {
+    @media (max-width: 768px) {
       margin-right: 0px;
     }
   }
@@ -29,7 +29,7 @@
     box-shadow: 0 0 15px 0px $black;
     margin-bottom: 20px;
 
-    @media screen and  (max-width: 600px) {
+    @media (max-width: 600px) {
       width: 100%;
       margin-left: 0px;
       box-shadow: 0 9px 15px -12px $black;
@@ -52,14 +52,14 @@
     padding: 5px;
     box-sizing: border-box;
 
-    @media screen and  (max-width: 600px) {
+    @media (max-width: 600px) {
       background-image: url("../img/bg1.jpg") !important;
       background-repeat: no-repeat;
       background-size: cover;
       height: 90px;
     }
 
-    @media screen and  (max-width: 320px) {
+    @media (max-width: 320px) {
       background-image: url("../img/bg1.jpg") !important;
       background-repeat: no-repeat;
       background-size: cover;
@@ -70,7 +70,7 @@
   &__article {
     display: none;
 
-    @media screen and  (max-width: 600px) {
+    @media (max-width: 600px) {
       display: block;
       font-size: 20px;
       line-height: 22px;
@@ -84,7 +84,7 @@
     font-size: 24px;
     text-align: center;
 
-    @media screen and  (max-width: 600px) {
+    @media (max-width: 600px) {
       display: none;
     }
   }
@@ -94,7 +94,7 @@
     flex-direction: column;
     padding: 20px 30px 30px;
 
-    @media screen and  (max-width: 600px) {
+    @media (max-width: 600px) {
       padding: 15px;
     }
   }
@@ -105,7 +105,7 @@
     margin-bottom: 20px;
     line-height: 28px;
 
-    @media screen and  (max-width: 600px) {
+    @media (max-width: 600px) {
       font-size: 12px;
       line-height: 26px;
     }
@@ -118,7 +118,7 @@
     padding-left: 13px;
     margin-bottom: 15px;
 
-    @media screen and  (max-width: 600px) {
+    @media (max-width: 600px) {
       font-size: 12px;
       &:not(:last-child){
         margin-right: 10px;

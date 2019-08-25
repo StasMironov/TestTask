@@ -22,26 +22,17 @@ html, body, div, span, applet, object, iframe,
  vertical-align: baseline;
   }
 
+html,
+body {
+  height: 100%;
+}
+
 img {
   width: 100%;
 }
 
 a {
   text-decoration: none;
-}
-
-main {
-
-  &:before {
-    content: "";
-    height: 345px;
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-  }
 }
 
 .container {
@@ -105,7 +96,6 @@ footer {
   .container {
     padding: 60px 40px;
 
-
     @media screen and  (max-width: 600px) {
       padding: 20px 15px;
     }
@@ -166,7 +156,7 @@ footer {
   -moz-animation: fade .8s;
   animation: fade .8s;
 
-  @media screen and  (max-width: 1024px) {
-    padding: 25px;
+  @media (max-width: 768px) {
+   padding: 25px;
   }
 }
