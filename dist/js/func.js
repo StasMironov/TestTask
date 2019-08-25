@@ -14,7 +14,6 @@ $(document).ready(function() {
 	
 	$("#menuFunc").on("click", function(){
 		$(".menu__nav").toggleClass('show');
-		console.log(1);
 	});
 
     $(function(){
