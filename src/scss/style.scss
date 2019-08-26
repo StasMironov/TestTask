@@ -34,8 +34,9 @@ a {
 .container {
   margin: 0 auto;
   max-width: 1260px;
+  padding: 0 40px;
 
-  @media screen and  (max-width: 600px) {
+  @media (max-width: 1024px) {
     padding: 0px;
   }
 }
